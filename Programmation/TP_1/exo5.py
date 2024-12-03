@@ -11,7 +11,7 @@ def get_key(key):
 #abcdefgmhijklmnopqrstuvwxyz
 alpha_principal = "abcdefghijklmnopqrstuvwxyz"
 crypte_alpha = ''
-message = input("Entrer le message: ")
+message = input("Entrer le message: ").lower()
 msg_crypt = ''
 new_key = int(input("Entrer la clef: "))
 #Get new key
