@@ -1,0 +1,23 @@
+---
+title: "Untitled"
+author: "Stanlay_HOUNNOUVI"
+date: "2025-01-18"
+output: html_document
+---
+# Import du dataSet
+```{r}
+setwd("~/GCP_Data_analyste/outil de traitement/DATA")
+data <- read.csv("AfricaMalaria_Trmtdata.csv", header = TRUE, sep=";", na.strings = "N/A")
+data
+```
+
+# verification du dataset
+```{r}
+ dim(data) # Voir les dimensions
+ names(data) # Voir noms des colonnes
+ 
+ str(data) # description des colonnes
+ 
+ summary(data) # sommaire des data
+ 
+```

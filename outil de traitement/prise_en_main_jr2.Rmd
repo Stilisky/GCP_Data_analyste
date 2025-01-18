@@ -1,0 +1,26 @@
+---
+title: "Untitled"
+author: "Stanlay_HOUNNOUVI"
+date: "2025-01-15"
+output: html_document
+---
+
+```{r}
+  setwd("~/GCP_Data_analyste/outil de traitement/DATA")
+  tabtest <- read.csv2("Tab_second_test-1.csv")
+  tabtest
+  dim(tabtest) #Renseigne sur la ligne et la colonne du dataset
+  names(tabtest) # Renseigne le nom des colonnes
+  str(tabtest) # Donne une breve presentation de la dataset
+  
+  prettyR::describe(tabtest)
+  table(tabtest$NmEts) # Effectif au niveau de chaque élement dans la col
+  
+  tabtest$NbreGP # Indexage ou visionnage d'une col specifique
+  
+  tabtest$NbreGPExlo <- ifelse(tabtest$NbreGP > 10, 1, 0) # Ajout d'une nouvelle colonne avec condition
+  View(tabtest)
+  
+  table(tabtest$NbreGPExlo)
+  
+```
